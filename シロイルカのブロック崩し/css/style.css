@@ -1,0 +1,68 @@
+ul,
+li {
+  list-style-type: none;
+}
+
+.title--lv1 {
+  margin: 1em 0;
+  margin-right: 1.5em;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.triangle {
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background: skyblue;
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+
+.wrap {
+  margin-right: 200px;
+}
+
+.text {
+  font-size: 1.3rem;
+  padding-bottom: 1em;
+}
+
+canvas {
+  display: block;
+  background-image: url(../imges/fhoto01.jpg);
+  background-size: cover;
+  margin: 100px auto 20px;
+  border-top: 12px solid gray;
+  border-right: 12px solid #141414;
+  border-left: 12px solid #2b2a2a;
+  border-bottom: 12px solid gray;
+}
+
+.btn-wrap {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+}
+
+.btn-base, .btn-base--right, .btn-base--left {
+  width: 80px;
+  aspect-ratio: 1/1;
+  background: #c4b39d;
+  -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+          clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  cursor: pointer;
+}
+.btn-base--right {
+  transform: rotate(180deg);
+}
+.btn-base:active, .btn-base--left:active, .btn-base--right:active {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.css.map */
